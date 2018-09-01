@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <titl>나의 히어로 아카데미아</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <style media="screen">
+      .scroll {
+        margin-bottom: 1000px;
+      }
+    </style>
+    <script>
+        function fnMove(seq){
+            var offset = $("#div" + seq).offset();
+            $('html, body').animate({scrollTop : offset.top}, 400);
+        }
+    </script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="html.html">나의 히어로 아카데미아</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="1.html.html" >나의 히어로 아카데미아1기<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">나의 히어로 아카데미아2기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">나의 히어로 아카데미아3기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">나의 히어로 아카데미아 극장판</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+<button type="button" class="btn btn-success"><a href="https://ani24tv.com/ani/search.php?query=%EB%82%98%EC%9D%98+%ED%9E%88%EC%96%B4%EB%A1%9C+%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8%EC%95%84">
+  나의 히어로 아카데미아 보는데</a></button>
+<button type="button" class="btn btn-warning" onclick = "fnMove('1')">배경</button>
+<button type="button" class="btn btn-danger" onclick = "fnMove('2')">주인공 스토리</button>
+<button type="button" class="btn btn-link" onclick = "fnMove('3')">캐릭터 소개</button><br>
+<div class = "scroll" id="div1">나의 히어로 아카데미아의 스토리는 처음에 어떤 빛나는 아이가 태어나 개성이라는 초능력 비슷한 것이 생겨났습니다.<br>
+               그리고 능력이 생기면서 그것을 나쁜짓에 쓰는 무리들이 생기고 그것을 막는 무리 히어로가 생겨났습니다.<br>
+                이것이 히어로 아카데미아의 배경입니다.</div>
+<div class = "scroll" id="div2">주인공은 미도리아 이즈쿠라는 이름의 고등학교로 올라가는 과정에서 시작됨니다.<br>
+               주인공인 미도리아 이즈쿠는 히어로가 되고 싶지만 개성이 태어 날떄부터 없었습니다.<br>
+               그런대도 히어로가 되겠다는 미도리아 이즈쿠의 최고의 히어로가 되는 날까지의 이야기 입니다.</div>
+<div class = "scroll" id="div3">div3</div>
+  </body>
+</html>
